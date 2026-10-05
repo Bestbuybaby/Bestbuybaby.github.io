@@ -5,12 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="ern3st.works">
   <title>ern3st.works</title>
-  <!-- Modern Vector Favicon (with automatic light/dark mode support) -->
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="document-viewer">
-    <iframe src="ern3st.works.pdf" title="ern3st.works"></iframe>
+  <main class="app" aria-label="ern3st.works PDF homepage">
+    <section class="viewer" aria-label="PDF viewer">
+      <p id="loading" class="status" role="status" aria-live="polite">Loading document…</p>
+      <div id="viewport" class="viewport" hidden>
+        <canvas id="pdf-canvas">Your browser does not support canvas rendering.</canvas>
+      </div>
+      <p id="fallback" class="status" hidden>
+        <span id="fallback-message">The document viewer is unavailable.</span> Open the PDF directly:
+        <a href="ern3st.works.pdf">ern3st.works.pdf</a>
+      </p>
+    </section>
   </main>
+
+  <noscript>
+    <p class="status noscript">
+      JavaScript is required for the responsive viewer. Open the PDF directly:
+      <a href="ern3st.works.pdf">ern3st.works.pdf</a>
+    </p>
+  </noscript>
+
+  <script type="module" src="pdf-viewer.js"></script>
 </body>
 </html>
