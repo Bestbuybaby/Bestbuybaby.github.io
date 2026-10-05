@@ -9,26 +9,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="app" aria-label="ern3st.works PDF homepage">
-    <section class="viewer" aria-label="PDF viewer">
-      <p id="loading" class="status" role="status" aria-live="polite">Loading document…</p>
-      <div id="viewport" class="viewport" hidden>
-        <canvas id="pdf-canvas">Your browser does not support canvas rendering.</canvas>
-      </div>
-      <p id="fallback" class="status" hidden>
-        <span id="fallback-message">The document viewer is unavailable.</span> Open the PDF directly:
-        <a href="ern3st.works.pdf">ern3st.works.pdf</a>
-      </p>
-    </section>
+  <main class="landing-page" aria-label="ern3st.works SVG homepage">
+    <figure class="document-shell">
+      <img
+        class="document-image"
+        src="ern3st.works.svg"
+        alt="A4 landing document for ern3st.works"
+      >
+    </figure>
+    <p class="status">
+      If the SVG is missing, upload <code>ern3st.works.svg</code> to the repository root.
+      You can still open the PDF directly:
+      <a href="ern3st.works.pdf">ern3st.works.pdf</a>
+    </p>
   </main>
 
   <noscript>
     <p class="status noscript">
-      JavaScript is required for the responsive viewer. Open the PDF directly:
+      JavaScript is not required. If the SVG is missing, upload
+      <code>ern3st.works.svg</code>. Open the PDF directly:
       <a href="ern3st.works.pdf">ern3st.works.pdf</a>
     </p>
   </noscript>
-
-  <script type="module" src="pdf-viewer.js"></script>
 </body>
 </html>
