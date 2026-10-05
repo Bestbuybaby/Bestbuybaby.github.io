@@ -11,8 +11,8 @@ body {
   margin: 0;
   width: 100%;
   min-height: 100%;
-  background: #111;
-  color: #fff;
+  background: #EAE9E3;
+  color: #111;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -23,6 +23,7 @@ body {
 .app {
   width: 100%;
   min-height: 100dvh;
+  background: #EAE9E3;
 }
 
 .viewer {
@@ -32,6 +33,7 @@ body {
   place-items: center;
   overflow: auto;
   padding: 1rem;
+  background: #EAE9E3;
 }
 
 .viewport {
@@ -46,7 +48,7 @@ body {
   width: min(100%, 100vw);
   height: auto;
   background: #fff;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
 }
 
 .status {
@@ -57,13 +59,13 @@ body {
 }
 
 .status a {
-  color: #9ad0ff;
+  color: #111;
 }
 
 .noscript {
   position: fixed;
   inset: auto 0 0;
-  background: #1b1b1b;
+  background: #EAE9E3;
 }
 
 @media (max-width: 767px) {
